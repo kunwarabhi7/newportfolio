@@ -10,7 +10,7 @@ const Home = () => {
         <h1 className='text-4xl sm:text-9xl font-bold text-blue-100'>
           Abhishek Singh
         </h1>
-        <p className='text-red-400 text-4xl  p-4'>and, I am</p>
+        <p className='text-red-400 text-4xl  p-4'>and, I am a</p>
         <h2 className='text-7xl sm:text-7xl font-bold text-[#c4b84e]'>
         <TypewriterEffect  />
         </h2>
