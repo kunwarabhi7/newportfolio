@@ -3,8 +3,10 @@ import logo from '../assets/logo.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiCrossedSwords } from "react-icons/gi";
 import { AiFillLinkedin } from "react-icons/ai";
-import { BsTwitter, BsGithub , BsFileEarmarkPersonFill } from "react-icons/bs";
+import { BsTwitter, BsGithub  } from "react-icons/bs";
 import { Link } from 'react-scroll';
+import { SiGmail } from "react-icons/si";
+
 
 
 
@@ -82,8 +84,8 @@ const NavBar = () => {
           </a>
 </li>
 <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-800'>
-          <a className='flex justify-between items-center w-full text-gray-300' href="/">Resume
-          <BsFileEarmarkPersonFill size={35}/>
+          <a className='flex justify-between items-center w-full text-gray-300' href="mailto:iamdevabhi@gmail.com">E-Mail
+          <SiGmail size={35}/>
           </a>
 </li>
         </ul>
