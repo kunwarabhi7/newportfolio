@@ -67,17 +67,17 @@ const NavBar = () => {
       <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-gray-500'>
-          <a className='flex justify-between items-center w-full text-gray-300' href="/">Linkedin
+          <a className='flex justify-between items-center w-full text-gray-300' href="https://www.linkedin.com/in/kunwarabhi7/">Linkedin
           <AiFillLinkedin size={35}/>
           </a>
 </li>
 <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-400'>
-          <a className='flex justify-between items-center w-full text-gray-100' href="/">Twitter
+          <a className='flex justify-between items-center w-full text-gray-100' href="https://twitter.com/kunwarabhi7">Twitter
           <BsTwitter size={35}/>
           </a>
 </li>
 <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#333333]'>
-          <a className='flex justify-between items-center w-full text-gray-300' href="/">GitHub
+          <a className='flex justify-between items-center w-full text-gray-300' href="https://github.com/kunwarabhi7">GitHub
           <BsGithub size={35}/>
           </a>
 </li>
