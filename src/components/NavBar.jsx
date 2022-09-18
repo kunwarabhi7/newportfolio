@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GiCrossedSwords } from "react-icons/gi";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsTwitter, BsGithub , BsFileEarmarkPersonFill } from "react-icons/bs";
+import { Link } from 'react-scroll';
 
 
 
@@ -17,22 +18,50 @@ const NavBar = () => {
       </div>
     
       <ul className='hidden md:flex'>
-        <li>Home</li>
-        <li>Experience</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>  <Link to="home" smooth={true} duration={500} >
+          Home
+        </Link></li>
+        <li> <Link to="skills" smooth={true} duration={500} >
+          Skills
+        </Link></li>
+        <li><Link to="experience" smooth={true} duration={500} >
+        Experience
+        </Link></li>
+
+        <li> <Link to="project" smooth={true} duration={500} >
+          Projects
+        </Link></li>
+        <li> <Link to="contact" smooth={true} duration={500} >
+          Contact
+        </Link></li>
       </ul>
     
     {/* Hamburger */}
     <div className='md:hidden z-10' onClick={toggleMobileNav}>{!nav? <GiHamburgerMenu /> : <GiCrossedSwords />} </div>
     {/* Mobile View */ }
     <ul className= {!nav ? "hidden" : 'absolute left-0 top-0 w-full h-screen bg-black flex flex-col justify-center items-center'} >
-        <li className='py-6 text-5xl'>Home</li>
-        <li className='py-6 text-5xl'>Experience</li>
-        <li className='py-6 text-5xl'>Skills</li>
-        <li className='py-6 text-5xl'>Projects</li>
-        <li className='py-6 text-5xl'>Contact</li>
+        <li className='py-6 text-5xl'>
+          <Link onClick={toggleMobileNav} to="home" smooth={true} duration={500} >
+          Home
+        </Link>
+        </li>
+        <li className='py-6 text-5xl'>
+          <Link  onClick={toggleMobileNav} to="skills" smooth={true} duration={500} >
+          Skills
+        </Link>
+        </li>
+        <li className='py-6 text-5xl'>
+          <Link onClick={toggleMobileNav}  to="experience" smooth={true} duration={500} >
+        Experience
+        </Link></li>
+        <li className='py-6 text-5xl'>
+          <Link onClick={toggleMobileNav}  to="project" smooth={true} duration={500} >
+          Projects
+        </Link></li>
+        <li className='py-6 text-5xl'>
+          <Link  onClick={toggleMobileNav} to="contact" smooth={true} duration={500} >
+          Contact
+        </Link></li>
       </ul>
       {/* Social Icon */}
       <div className='hidden md:flex fixed flex-col top-[35%] left-0'>

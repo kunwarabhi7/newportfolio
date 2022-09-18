@@ -9,7 +9,7 @@ import {
 
 const Experience = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div name='experience' className='w-full h-screen bg-[#0a192f] text-gray-300'>
         <VerticalTimeline lineColor="blue">
         
         <VerticalTimelineElement

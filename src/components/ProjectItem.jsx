@@ -1,5 +1,5 @@
 import React from 'react'
-const ProjectItem = ({image,name ,demo,code , skill}) => {
+const ProjectItem = ({image,name ,demo,code }) => {
   return (
     <div>
         {/* Grid Item */}
