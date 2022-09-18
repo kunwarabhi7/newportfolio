@@ -2,22 +2,25 @@ import React,{useState} from 'react'
 import logo from '../assets/logo.png'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GiCrossedSwords } from "react-icons/gi";
+import { AiFillLinkedin } from "react-icons/ai";
+import { BsTwitter, BsGithub , BsFileEarmarkPersonFill } from "react-icons/bs";
+
 
 
 const NavBar = () => {
   const [nav,setNav] = useState(false)
   const toggleMobileNav = () => setNav(!nav)
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-blue-100'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-blue-100'>
       <div>
-<img src={logo} alt="logo" style={{width:'200px'}}/>
+<img src={logo} alt="logo" className='cursor-pointer' style={{width:'200px'}}/>
       </div>
     
       <ul className='hidden md:flex'>
         <li>Home</li>
-        <li>TimeLine</li>
+        <li>Experience</li>
         <li>Skills</li>
-        <li>Project</li>
+        <li>Projects</li>
         <li>Contact</li>
       </ul>
     
@@ -26,11 +29,36 @@ const NavBar = () => {
     {/* Mobile View */ }
     <ul className= {!nav ? "hidden" : 'absolute left-0 top-0 w-full h-screen bg-black flex flex-col justify-center items-center'} >
         <li className='py-6 text-5xl'>Home</li>
-        <li className='py-6 text-5xl'>TimeLine</li>
+        <li className='py-6 text-5xl'>Experience</li>
         <li className='py-6 text-5xl'>Skills</li>
-        <li className='py-6 text-5xl'>Project</li>
+        <li className='py-6 text-5xl'>Projects</li>
         <li className='py-6 text-5xl'>Contact</li>
       </ul>
+      {/* Social Icon */}
+      <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
+        <ul>
+          <li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-gray-500'>
+          <a className='flex justify-between items-center w-full text-gray-300' href="/">Linkedin
+          <AiFillLinkedin size={35}/>
+          </a>
+</li>
+<li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-400'>
+          <a className='flex justify-between items-center w-full text-gray-100' href="/">Twitter
+          <BsTwitter size={35}/>
+          </a>
+</li>
+<li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-[#333333]'>
+          <a className='flex justify-between items-center w-full text-gray-300' href="/">GitHub
+          <BsGithub size={35}/>
+          </a>
+</li>
+<li className='w-[160px] h-[60px] flex items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-800'>
+          <a className='flex justify-between items-center w-full text-gray-300' href="/">Resume
+          <BsFileEarmarkPersonFill size={35}/>
+          </a>
+</li>
+        </ul>
+      </div>
     </div>
   )
 }
