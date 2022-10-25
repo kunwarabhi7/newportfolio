@@ -2,7 +2,6 @@ import Shop from '../assets/shop.jpg'
 import quote from '../assets/quote.jpg';
 import image from '../assets/imagesearch.jpg';
 import video from '../assets/videosearch.jpg'
-import portfolio from '../assets/portfolio.jpg';
 import foodieapp from '../assets/foodie.jpg'
 import blog from '../assets/blog.jpg'
 
